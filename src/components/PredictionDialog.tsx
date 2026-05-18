@@ -126,7 +126,7 @@ export function PredictionDialog({ open, onClose, match, userId, roomId, existin
                   type="number"
                   min={0}
                   max={20}
-                  {...register("score_a")}
+                  {...register("score_a", { valueAsNumber: true })}
                   className="w-full rounded-lg border border-border bg-input px-3 py-3 text-center font-display text-3xl outline-none focus:border-primary"
                 />
               </div>
@@ -137,7 +137,7 @@ export function PredictionDialog({ open, onClose, match, userId, roomId, existin
                   type="number"
                   min={0}
                   max={20}
-                  {...register("score_b")}
+                  {...register("score_b", { valueAsNumber: true })}
                   className="w-full rounded-lg border border-border bg-input px-3 py-3 text-center font-display text-3xl outline-none focus:border-primary"
                 />
               </div>
