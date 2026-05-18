@@ -8,8 +8,8 @@ import { Loader2, X } from "lucide-react";
 
 const baseSchema = z.object({
   pick: z.enum(["team_a", "team_b", "draw"]),
-  score_a: z.coerce.number().int().min(0).max(20),
-  score_b: z.coerce.number().int().min(0).max(20),
+  score_a: z.number().int().min(0).max(20),
+  score_b: z.number().int().min(0).max(20),
   pen_winner: z.enum(["team_a", "team_b"]).nullable().optional(),
 });
 type Vals = z.infer<typeof baseSchema>;
