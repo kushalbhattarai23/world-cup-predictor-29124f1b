@@ -52,7 +52,7 @@ function LoginPage() {
           </div>
           <div>
             <h1 className="font-display text-3xl tracking-wider">Pitch Predictor</h1>
-            <p className="text-xs text-muted-foreground">Invite-only · World Cup 2026</p>
+            <p className="text-xs text-muted-foreground">World Cup 2026 · Free to play</p>
           </div>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
