@@ -50,7 +50,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Pitch Predictor — World Cup 2026" },
-      { name: "description", content: "Invite-only FIFA World Cup 2026 prediction league." },
+      { name: "description", content: "Free-to-play FIFA World Cup 2026 prediction league." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
