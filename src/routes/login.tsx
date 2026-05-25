@@ -90,8 +90,12 @@ function LoginPage() {
           </button>
         </form>
         <p className="mt-6 text-center text-xs text-muted-foreground">
-          Accounts are provisioned by the league admin. No self-registration.
+          New here?{" "}
+          <Link to="/signup" className="font-semibold text-primary hover:underline">
+            Create an account
+          </Link>
         </p>
+
       </div>
     </div>
   );
