@@ -1,6 +1,8 @@
 [build]
   command = "npm run build"
-  publish = ".output/public"
+  publish = "dist/client"
 
-[[plugins]]
-  package = "@netlify/plugin-tanstack-start"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
